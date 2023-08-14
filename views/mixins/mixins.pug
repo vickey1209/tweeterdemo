@@ -1,0 +1,24 @@
+mixin createPostForm(userloggedin)
+  .postFormContainer    
+    .userimagecontainer
+      img(src=userloggedin.profilepicture, alt="user profilepicture")
+    .textareaContainer
+      textarea#postTextarea(placeholder="whats happening...!")
+      .buttonsContainer       
+        button#submitPostButton(disabled="") post
+
+
+mixin createReplyModal(userloggedin)
+  #replyModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='replyModalLabel', aria-hidden='true')
+    .modal-dialog(role='document')
+        .modal-content
+          .modal-header
+            h5#replyModalLabel.modal-title Reply
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') &times;
+          .modal-body
+            | ...
+          .modal-footer
+            button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+            button#submitreplybutton.btn.btn-primary(type='button', disabled ="") Reply
+              

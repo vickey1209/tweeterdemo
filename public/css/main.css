@@ -1,0 +1,170 @@
+:root{
+    --blue: #1FA2F1;
+    --buttonHoverBg : #d4edff;
+    --LightGrey : rgb(202, 198, 198);
+    --spacing: 15px;
+    --bluelight:#7e8f9a;
+
+}
+*{
+    inline-size: none;
+}
+a
+{
+ color: inherit;
+}
+ 
+a:hover 
+{
+    color: inherit;
+    text-decoration:none;
+
+}
+h1{
+    font-size: 19px;
+    font-weight: 800;
+    margin: 0;
+}
+
+nav {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+     
+}
+
+nav a
+{
+   
+    padding: 10px;
+    font-size: 30px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #212529;
+
+
+} 
+nav a.blue{
+    color: var(--blue); 
+
+}
+
+nav a:hover
+{
+    background-color: var(--buttonHoverBg);
+    color: var(--blue);
+    border-radius: 50%;
+}
+
+.mainSectionContainer
+{
+   padding: 0;
+   border-left: 1px solid var(--LightGrey);
+   border-right: 1px solid var(--LightGrey);
+   display: flex;
+   flex-direction: column;
+
+
+}
+.titleContainer {
+    height: 53px;
+    padding: 0 var(--spacing);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--LightGrey);
+    flex-shrink: 0;
+
+}
+.titleContainer h1{
+ flex: 1;   
+}
+
+.postFormContainer{
+    display: flex;
+    padding: var(--spacing);
+    border-bottom : 10px solid rgb(230,236 , 240)
+
+}
+
+.userimagecontainer{
+    width: 50px;
+    height: 50px;
+}
+
+.userimagecontainer img
+{
+    width:100%;
+    border-radius: 50%;
+    background-color: #fff;
+
+
+}
+
+.textareaContainer{
+    flex: 1;
+    padding-left: var(--spacing);
+
+
+}
+.textareaContainer textarea
+{
+    resize: none;
+    width: 100%;
+    border:none;
+    font-size: 19px;
+}
+.buttonsContainer
+{
+    margin-top: auto;
+    padding: var(--spacing);
+}
+#submitPostButton{
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 7px 15px;
+}
+
+*{
+    outline: none !important;
+}
+
+#submitPostButton:disabled{
+    background-color: var(--bluelight);
+
+} 
+.Displayname {
+    font-weight: bold;
+}
+
+.postfooter{
+    display: flex;
+    text-align: center;
+}
+
+.postfooter .postbuttoncontainer{
+    flex: 1;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+button i ,
+button span {
+    pointer-events: none;
+}
+.likebutton
+{
+background-color: #fff;
+}
+
+
+
+
+
